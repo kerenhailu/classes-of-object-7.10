@@ -149,13 +149,7 @@ class Pupils {
         this.Pic,);
     }
   PupilString(){
-    toString(this.Firstname,
-    this.Lastname,
-    this.Age,
-    this.Email,
-    this.ClassP,
-    this.Year,
-    this.Pic)
+    return this.Firstname+this.Lastname+toString(this.Age)+this.Email+toString(this.ClassP)+this.Pic;
   }
 }
 buttonSend.onclick=()=>{
@@ -169,10 +163,7 @@ table.innerHTML+=`<tr><td>${pupil1.Firstname}</td>
 <td><button onclick="${pupil1.PupilPrint()}">${pupil1.Firstname}</button</td>
 <td><img src="${pupil1.Pic}" width=100px height=80px></td></tr>
 `
-
 console.log(pupil1);
-// pupil1.PupilPrint()
-
 console.log(pupil1.PupilString())
 
 
